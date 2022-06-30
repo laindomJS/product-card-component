@@ -5,7 +5,7 @@ import { Card } from './components/Card';
 function App() {
 
   return (
-    <Box bgColor="brand.200" display="flex" justifyContent="center" alignItems="center" flexDir="column" p="2rem" w="100%" h="100vh">
+    <Box as="main" bgColor="brand.200" display="flex" justifyContent="center" alignItems="center" flexDir="column" p={ {base:'0', lg:'2rem'} } w="100%" h="100vh">
       <Card />
     <Text mt="1rem" fontSize="13px">
       Challenge by <Link href="https://www.frontendmentor.io/challenges" target="_blank" textDecoration="underline">FrontendMentor.</Link> 
