@@ -8,7 +8,7 @@ export const Card = () => {
   return(
     <Flex as="article" bgColor="white" w={ {base:'350px', lg:'620px'} } borderTopRightRadius="8px" borderBottomRightRadius="8px" borderBottomLeftRadius={ {base:'8px', lg:'0'} } flexDir={ {base:'column', md:'row', lg:"row"} } h={ {base:'590px', lg:'fit-content'} }>
       
-      <Image src={imgSrc} w={ {base:'100%', lg:'50%'} } h={ {base:'30%', lg:'100%'} } borderTopLeftRadius="8px" borderBottomLeftRadius={{base:'0', lg:'8px'}} borderTopRightRadius={ {base:'8px', lg:'0'} } alt="Photo of a perfume" />
+      <Image src={ window.screen.width <= 420 ? imgMobile : imgSrc } w={ {base:'100%', lg:'50%'} } h={ {base:'30%', lg:'100%'} } borderTopLeftRadius="8px" borderBottomLeftRadius={{base:'0', lg:'8px'}} borderTopRightRadius={ {base:'8px', lg:'0'} } alt="Photo of a perfume" />
 
       <Box as="section" p="2rem">
         <Text as="span" textTransform="uppercase" letterSpacing="4px" fontWeight="normal" color="brand.400">Perfume</Text>
